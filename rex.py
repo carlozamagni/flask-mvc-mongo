@@ -9,7 +9,12 @@ app = Flask(__name__)
 
 app.config.from_object(settings)
 
-setattr(sys.modules['settings'],'mongoDb', Connection(app.config['MONGODB_HOST'], app.config['MONGODB_PORT']))
+error = None
+
+try:
+    setattr(sys.modules['settings'],'mongoDb', Connection(app.config['MONGODB_HOST'], app.config['MONGODB_PORT']))
+except:
+    error = 'database init'
 
 app.register_blueprint(blueprint=user_controller.user, url_prefix='/user')
 
@@ -20,7 +25,10 @@ def favicon():
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    if error is None:
+        return 'Hello World!'
+
+    return error
 
 
 if __name__ == '__main__':
