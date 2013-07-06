@@ -1,1 +1,1 @@
-web: gunicorn rex:app
+web: gunicorn apprun:app
