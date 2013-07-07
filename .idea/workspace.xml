@@ -45,9 +45,7 @@
         <entry file="file://$PROJECT_DIR$/rex/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="43" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,17 +54,33 @@
         <entry file="file://$PROJECT_DIR$/rex/models/user_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apprun.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="apprun.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apprun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="23" selection-start="100" selection-end="100" vertical-scroll-proportion="0.1572327">
+            <state line="5" column="23" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rex/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEMP" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TEMP">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,9 +90,7 @@
         <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#81#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,6 +118,8 @@
         <option value="$PROJECT_DIR$/rex/__init__.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/apprun.py" />
+        <option value="$PROJECT_DIR$/rex/settings.py" />
+        <option value="$PROJECT_DIR$/TEMP" />
       </list>
     </option>
   </component>
@@ -140,6 +154,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,20 +207,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/apprun.py" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -286,7 +300,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -344,17 +358,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.6697613" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26040173" sideWeight="0.6697613" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33023873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33023873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -440,6 +454,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
@@ -470,63 +491,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/templates/user/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/templates/user/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="285" selection-end="285" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rex/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="163" selection-end="163" vertical-scroll-proportion="0.12578617">
-          <folding />
-        </state>
+        <state line="12" column="7" selection-start="285" selection-end="285" vertical-scroll-proportion="-7.5" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1460" column="0" selection-start="61615" selection-end="61615" vertical-scroll-proportion="0.3317647">
-          <folding />
-        </state>
+        <state line="1460" column="0" selection-start="61615" selection-end="61615" vertical-scroll-proportion="0.3317647" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/controllers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/models/user_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="43" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -539,7 +539,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apprun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="100" selection-end="100" vertical-scroll-proportion="0.1572327">
+        <state line="5" column="23" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rex/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEMP">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
