@@ -1,10 +1,12 @@
 from mongokit import Document
-from rex import app
+from rex import app, db
 import validators
 
 __author__ = 'cazamagni'
 
 class User(Document):
+    __collection__ = 'users'
+
     structure = {
         'name': unicode,
         'email': unicode,
@@ -17,5 +19,19 @@ class User(Document):
 
     def __repr__(self):
         return '<User %r>' % self.name
+    '''
+    # Flask-Login integration
+    def is_authenticated(self):
+        return True
 
-app.db.register([User])
+    def is_active(self):
+        return True
+
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return self.id
+    '''
+
+db.register([User])
