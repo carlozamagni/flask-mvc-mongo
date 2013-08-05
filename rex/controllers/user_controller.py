@@ -10,17 +10,17 @@ user = Blueprint('user', __name__, static_folder='static', template_folder='temp
 
 @user.route('/', methods=['GET','POST'])
 def list():
-    #db = app.db
     users_list = db.User.find()
     #return jsonify(**dict(users_list))
     return dumps(users_list)
 
+@user.route('/login', methods=['POST'])
+def login():
+    pass
 
 @user.route('/new', methods=['GET', 'POST'])
 def new():
-
     if request.method == 'POST':
-        #db = app.db
         user = db.User()
         user.name = request.form['name']
         user.email = request.form['email']
