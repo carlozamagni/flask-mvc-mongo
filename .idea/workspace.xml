@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe2b0400-38af-4f5c-9576-1cd51b3b1138" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/user_controller.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/user_model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/validators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rex/controllers/user_controller.py" afterPath="$PROJECT_DIR$/rex/controllers/user_controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fe2b0400-38af-4f5c-9576-1cd51b3b1138" name="Default" comment="" />
     <ignored path="rex.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/rex.py" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1373046124537" ignored="false" />
@@ -26,7 +15,7 @@
     <file path="/apprun.py" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1373097549677" ignored="false" />
     <file path="/auth_controller.py" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1374611064862" ignored="false" />
     <file path="/pwd_hash.py" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1374770776217" ignored="false" />
-    <file path="/Dummy.txt" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1375457051946" ignored="false" />
+    <file path="/Dummy.txt" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1375730732110" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +53,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_controller.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user_controller.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="492" selection-end="492" vertical-scroll-proportion="0.35123968">
+            <state line="17" column="12" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rex/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="20" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rex/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.43269232">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,14 +226,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox_yahoo/Dropbox/Files Corso MongoDb/Final_q4/final-exam-q4" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -373,7 +380,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28120518" sideWeight="0.60079575" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28550932" sideWeight="0.60079575" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -475,16 +482,6 @@
         <state line="63" column="0" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rex/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rex/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apprun.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
@@ -536,10 +533,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="492" selection-end="492" vertical-scroll-proportion="0.35123968">
+        <state line="17" column="12" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rex/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rex/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.43269232">
+          <folding />
         </state>
       </provider>
     </entry>
