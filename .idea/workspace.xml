@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe2b0400-38af-4f5c-9576-1cd51b3b1138" name="Default" comment="" />
+    <list default="true" id="fe2b0400-38af-4f5c-9576-1cd51b3b1138" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rex/settings.py" afterPath="$PROJECT_DIR$/rex/settings.py" />
+    </list>
     <ignored path="rex.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/rex.py" changelist="fe2b0400-38af-4f5c-9576-1cd51b3b1138" time="1373046124537" ignored="false" />
@@ -56,7 +58,7 @@
       <file leaf-file-name="user_controller.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+            <state line="12" column="31" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -64,19 +66,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rex/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="20" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+            <state line="6" column="37" selection-start="157" selection-end="157" vertical-scroll-proportion="0.18789144">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rex/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.43269232">
+            <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth_controller.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rex/controllers/auth_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="38" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +118,6 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/apprun.py" />
         <option value="$PROJECT_DIR$/TEMP" />
-        <option value="$PROJECT_DIR$/rex/settings.py" />
         <option value="$PROJECT_DIR$/rex/templates/login.html" />
         <option value="$PROJECT_DIR$/rex/controllers/auth_controller.py" />
         <option value="$PROJECT_DIR$/rex/__init__.py" />
@@ -116,6 +126,7 @@
         <option value="$PROJECT_DIR$/rex/utils/pwd_hash.py" />
         <option value="$PROJECT_DIR$/rex/models/forms/user_forms.py" />
         <option value="$PROJECT_DIR$/rex/controllers/user_controller.py" />
+        <option value="$PROJECT_DIR$/rex/settings.py" />
       </list>
     </option>
   </component>
@@ -380,11 +391,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28550932" sideWeight="0.60079575" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28550932" sideWeight="0.6706349" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33023873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -489,11 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rex/controllers/auth_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="811" selection-end="811" vertical-scroll-proportion="0.8117647" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/flask_mongokit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="240" column="0" selection-start="8201" selection-end="8201" vertical-scroll-proportion="0.0" />
@@ -531,9 +537,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rex/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rex/controllers/auth_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rex/controllers/user_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+        <state line="12" column="31" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -542,14 +562,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rex/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rex/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.43269232">
+        <state line="6" column="37" selection-start="157" selection-end="157" vertical-scroll-proportion="0.18789144">
           <folding />
         </state>
       </provider>
