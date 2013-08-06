@@ -1,5 +1,6 @@
 from flask import Flask, send_from_directory
 from flask.ext.mongokit import MongoKit
+from flask.templating import render_template
 import os
 import settings
 
@@ -24,6 +25,6 @@ def favicon():
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return render_template('home.html')
 
 
