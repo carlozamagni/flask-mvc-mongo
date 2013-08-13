@@ -1,9 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+
+
+<div class="container-fluid">
+
+<div id="body">
+
+<div class="row-fluid" style="margin-bottom:10%;"><!-- spacer --></div>
+
+<div class="row-fluid">
+<div class="span4"></div>
+<div class="span4">
+
+    <h2 class="form-signin-heading">Login</h2>
+    <form name="login" action="/user/login" method="POST">
+        <p data-intro="Inserisci la tua email." data-position="right">
+            <input class="input-block-level" autofocus placeholder="email o nome utente" type="text" name="name">
+        </p>
+        <p data-intro="Inserisci la tua password." data-position="right">
+            <input class="input-block-level" autofocus placeholder="password" type="text" name="pass">
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+</div> <!--span4-->
+</div> <!--row-fluid-->
+</div> <!--body-->
+</div> <!--container fluid-->
+
+
+{% endblock %}

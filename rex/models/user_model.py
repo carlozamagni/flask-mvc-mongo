@@ -19,7 +19,7 @@ class User(Document):
 
     def __repr__(self):
         return '<User %r>' % self.name
-    '''
+
     # Flask-Login integration
     def is_authenticated(self):
         return True
@@ -32,6 +32,5 @@ class User(Document):
 
     def get_id(self):
         return self.id
-    '''
 
 db.register([User])

@@ -1,6 +1,6 @@
 from bson.json_util import dumps
 from flask import Blueprint, jsonify, request, redirect, url_for, render_template
-from rex import db
+from rex import db, lm
 from rex.models import user_model
 
 
@@ -14,9 +14,13 @@ def list():
     #return jsonify(**dict(users_list))
     return dumps(users_list)
 
-@user.route('/login', methods=['POST'])
+@user.route('/login', methods=['GET'])
 def login():
-    pass
+    return render_template('login.html')
+
+@user.route('/login', methods=['POST'])
+def login_user():
+    return
 
 @user.route('/new', methods=['GET', 'POST'])
 def new():
@@ -28,3 +32,7 @@ def new():
         return redirect(url_for('list'))
 
     return render_template('user/new.html')
+
+@lm.user_loader
+def load_user(id):
+    return db.User.find({'_id':int(id)})
