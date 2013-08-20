@@ -10,6 +10,7 @@ class User(Document):
     structure = {
         'name': unicode,
         'email': unicode,
+        'role': int,
     }
     validators = {
         'name': validators.max_length(50),
@@ -32,5 +33,8 @@ class User(Document):
 
     def get_id(self):
         return self.id
+
+    def get_role(self):
+        return
 
 db.register([User])

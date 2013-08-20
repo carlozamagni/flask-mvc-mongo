@@ -3,9 +3,9 @@ from rex import app, db
 
 __author__ = 'carlozamagni'
 
-auth = Blueprint('auth', __name__, static_folder='static', template_folder='templates')
+auth_ctrl = Blueprint('auth', __name__, static_folder='static', template_folder='templates')
 
-@auth.route('/login', methods=['GET', 'POST'])
+@auth_ctrl.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
     if request.method == 'POST':
@@ -19,7 +19,7 @@ def login():
     return render_template('login.html', error=error)
 
 
-@auth.route('/logout')
+@auth_ctrl.route('/logout')
 def logout():
     session.pop('logged_in', None)
     return redirect(url_for('main_page'))

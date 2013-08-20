@@ -6,23 +6,22 @@ from rex.models import user_model
 
 __author__ = 'cazamagni'
 
-user = Blueprint('user', __name__, static_folder='static', template_folder='templates')
+user_ctrl = Blueprint('user', __name__, static_folder='static', template_folder='templates')
 
-@user.route('/', methods=['GET','POST'])
+@user_ctrl.route('/', methods=['GET','POST'])
 def list():
     users_list = db.User.find()
-    #return jsonify(**dict(users_list))
     return dumps(users_list)
 
-@user.route('/login', methods=['GET'])
+@user_ctrl.route('/login', methods=['GET','POST'])
 def login():
-    return render_template('login.html')
+    if request.method == 'GET':
+        return render_template('login.html')
 
-@user.route('/login', methods=['POST'])
-def login_user():
+    #else must return something as login-process result
     return
 
-@user.route('/new', methods=['GET', 'POST'])
+@user_ctrl.route('/new', methods=['GET', 'POST'])
 def new():
     if request.method == 'POST':
         user = db.User()

@@ -12,20 +12,21 @@ app.config.from_object(settings)
 
 db = MongoKit(app)
 
-#setattr(sys.modules['settings'],'mongoDb', Connection(app.config['MONGODB_HOST'], app.config['MONGODB_PORT']))
-#setattr(sys.modules['settings'],'mongoDb', db)
-
 lm = LoginManager()
 lm.init_app(app)
 lm.login_view = '/user/login'
 
 from rex.controllers import user_controller
-app.register_blueprint(blueprint=user_controller.user, url_prefix='/user')
+app.register_blueprint(blueprint=user_controller.user_ctrl, url_prefix='/user')
 
 from rex.controllers import auth_controller
-app.register_blueprint(blueprint=auth_controller.auth, url_prefix='/auth')
+app.register_blueprint(blueprint=auth_controller.auth_ctrl, url_prefix='/auth')
 
+from rex.controllers import class_controller
+app.register_blueprint(blueprint=class_controller.class_ctrl, url_prefix='/class')
 
+from rex.controllers import student_controller
+app.register_blueprint(blueprint=student_controller.student_ctrl, url_prefix='/student')
 
 @app.route('/favicon.ico')
 def favicon():
