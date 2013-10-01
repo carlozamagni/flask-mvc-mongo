@@ -14,7 +14,7 @@ db = MongoKit(app)
 
 lm = LoginManager()
 lm.init_app(app)
-lm.login_view = '/user/login'
+lm.login_view = '/auth/login'
 
 from rex.controllers import user_controller
 app.register_blueprint(blueprint=user_controller.user_ctrl, url_prefix='/user')
