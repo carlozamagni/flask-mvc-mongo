@@ -10,6 +10,8 @@ class User(Document):
     structure = {
         'name': unicode,
         'email': unicode,
+        'username':unicode,
+        'password':unicode,
         'role': int,
     }
     validators = {

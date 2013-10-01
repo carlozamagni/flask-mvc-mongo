@@ -1,5 +1,6 @@
 from flask import Blueprint, request, session, redirect, url_for, render_template
 from rex import app, db
+from rex.models import user_model
 
 __author__ = 'carlozamagni'
 
@@ -9,12 +10,18 @@ auth_ctrl = Blueprint('auth', __name__, static_folder='static', template_folder=
 def login():
     error = None
     if request.method == 'POST':
-        if request.form['username'] != app.config['USERNAME']:
-            error = 'Invalid username'
-        elif request.form['password'] != app.config['PASSWORD']:
-            error = 'Invalid password'
+
+        username = request.form['username']
+        password = request.form['password']
+
+        user = db.User.find({'username':username})
+
+        if user is None or user['password'] != password:
+            error = 'Invalid username or password'
         else:
             session['logged_in'] = True
+            session['user_id'] = user['id']
+
             return redirect(url_for('main_page'))
     return render_template('login.html', error=error)
 
