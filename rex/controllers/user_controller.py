@@ -8,18 +8,21 @@ __author__ = 'cazamagni'
 
 user_ctrl = Blueprint('user', __name__, static_folder='static', template_folder='templates')
 
-@user_ctrl.route('/', methods=['GET','POST'])
+
+@user_ctrl.route('/', methods=['GET', 'POST'])
 def home():
     users_list = db.User.find()
     return dumps(users_list)
 
-@user_ctrl.route('/login', methods=['GET','POST'])
+
+@user_ctrl.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
         return render_template('login.html')
 
     #else must return something as login-process result
     return
+
 
 @user_ctrl.route('/new', methods=['GET', 'POST'])
 def new():
@@ -32,6 +35,7 @@ def new():
 
     return render_template('user/new.html')
 
+
 @lm.user_loader
 def load_user(id):
-    return db.User.find_one({'_id':int(id)})
+    return db.User.find_one({'_id': int(id)})

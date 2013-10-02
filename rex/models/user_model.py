@@ -39,7 +39,7 @@ class User(Document):
         return False
 
     def get_id(self):
-        return self.id
+        return self._id
 
     def get_role(self):
         return self.role

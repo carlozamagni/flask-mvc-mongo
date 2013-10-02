@@ -1,4 +1,5 @@
 from flask import Blueprint, request, session, redirect, url_for, render_template
+from flask.ext.login import login_user
 from rex import app, db
 from rex.models import user_model
 
@@ -24,6 +25,7 @@ def login():
             session['user_id'] = user['_id']
 
             #home_page = user_model.User.get_role(user['role'])
+            login_user(user=user)
 
             return redirect('/user/')
     return render_template('login.html', error=error)

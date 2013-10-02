@@ -1,5 +1,6 @@
+from json import dumps
 from flask import Flask, send_from_directory
-from flask.ext.login import login_required, LoginManager
+from flask.ext.login import login_required, LoginManager, current_user
 from flask.ext.mongokit import MongoKit
 from flask.templating import render_template
 import os
@@ -36,6 +37,8 @@ def favicon():
 @app.route('/')
 @login_required
 def hello_world():
-    return render_template('home.html')
+    return dumps({'user_name': current_user['name'],
+                  'user_email': current_user['email']})
+    #return render_template('home.html')
 
 
