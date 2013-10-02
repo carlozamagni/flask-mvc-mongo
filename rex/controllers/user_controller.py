@@ -9,7 +9,7 @@ __author__ = 'cazamagni'
 user_ctrl = Blueprint('user', __name__, static_folder='static', template_folder='templates')
 
 @user_ctrl.route('/', methods=['GET','POST'])
-def list():
+def home():
     users_list = db.User.find()
     return dumps(users_list)
 
@@ -28,10 +28,10 @@ def new():
         user.name = request.form['name']
         user.email = request.form['email']
         user.save()
-        return redirect(url_for('list'))
+        return redirect(url_for('home'))
 
     return render_template('user/new.html')
 
 @lm.user_loader
 def load_user(id):
-    return db.User.find({'_id':int(id)})
+    return db.User.find_one({'_id':int(id)})

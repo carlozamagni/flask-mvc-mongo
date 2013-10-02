@@ -6,6 +6,7 @@ __author__ = 'carlozamagni'
 
 auth_ctrl = Blueprint('auth', __name__, static_folder='static', template_folder='templates')
 
+
 @auth_ctrl.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
@@ -14,15 +15,17 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        user = db.User.find({'username':username})
+        user = db.User.find_one({'username': username})
 
         if user is None or user['password'] != password:
             error = 'Invalid username or password'
         else:
             session['logged_in'] = True
-            session['user_id'] = user['id']
+            session['user_id'] = user['_id']
 
-            return redirect(url_for('main_page'))
+            #home_page = user_model.User.get_role(user['role'])
+
+            return redirect('/user/')
     return render_template('login.html', error=error)
 
 
