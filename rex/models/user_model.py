@@ -44,8 +44,8 @@ class User(Document):
     def get_role(self):
         return self.role
 
-    def get_user_home(self, user_role):
-        role = db['roles'].find_one({'_id': user_role})
+    def get_user_home(self):
+        role = db['roles'].find_one({'_id': self.get_role()})
         return role['home_page']
 
 

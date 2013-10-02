@@ -1,5 +1,6 @@
 from bson.json_util import dumps
 from flask import Blueprint, jsonify, request, redirect, url_for, render_template
+from flask.ext.login import current_user
 from rex import db, lm
 from rex.models import user_model
 
@@ -11,8 +12,10 @@ user_ctrl = Blueprint('user', __name__, static_folder='static', template_folder=
 
 @user_ctrl.route('/', methods=['GET', 'POST'])
 def home():
-    users_list = db.User.find()
-    return dumps(users_list)
+    user_homepage = current_user.get_user_home()
+    return render_template(user_homepage)
+    #users_list = db.User.find()
+    #return dumps(users_list)
 
 
 @user_ctrl.route('/login', methods=['GET', 'POST'])
