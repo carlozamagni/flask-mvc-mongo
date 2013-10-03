@@ -10,9 +10,18 @@ __author__ = 'cazamagni'
 user_ctrl = Blueprint('user', __name__, static_folder='static', template_folder='templates')
 
 
+@lm.user_loader
+def load_user(id):
+    return db.User.find_one({'_id': int(id)})
+
+
 @user_ctrl.route('/', methods=['GET', 'POST'])
 def home():
     user_homepage = current_user.get_user_home()
+
+    #classes
+    classes = [cls for cls in db.Class.find({'teachings.teacher_id': current_user.get_id()})]
+
     return render_template(user_homepage)
     #users_list = db.User.find()
     #return dumps(users_list)
@@ -37,8 +46,3 @@ def new():
         return redirect(url_for('home'))
 
     return render_template('user/new.html')
-
-
-@lm.user_loader
-def load_user(id):
-    return db.User.find_one({'_id': int(id)})

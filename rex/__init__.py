@@ -61,10 +61,15 @@ def setup():
     users = [{"_id": 0, "name": "test student", "email": "teststudent@email.com", "username": "test_student", "password": "test", "role": 0},
              {"_id": 1, "name": "test teacher", "email": "testteacher@email.com", "username": "test_teacher", "password": "test", "role": 1},
              {"_id": 2, "name": "test admin", "email": "testadmin@email.com", "username": "test_admin", "password": "test", "role": 2}]
-
     db['users'].drop()
     db['users'].insert(users)
     inserted.append(users)
+
+    classes = [{"_id": 0, "name": "3A", "academic_year": 2013, "teachings": [{"subject_id": 0, "teacher_id": 1}]},
+               {"_id": 1, "name": "3B", "academic_year": 2013, "teachings": [{"subject_id": 0, "teacher_id": 3}]}]
+    db['classes'].drop()
+    db['classes'].insert(classes)
+    inserted.append(classes)
 
     return json.dumps(inserted)
 

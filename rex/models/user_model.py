@@ -49,4 +49,6 @@ class User(Document):
         return role['home_page']
 
 
+
+
 db.register([User])
